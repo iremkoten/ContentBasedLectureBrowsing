@@ -1,0 +1,47 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Welcome to Colebro</title>
+    
+    <style>
+        a{
+            text-decoration: none !important;
+        }
+    </style>
+    
+</head>
+<body style="background-color:#31a7e6;">
+   
+    <div id='d1' style="position:absolute; top:0px; left:0px; z-index:1"> 
+    <canvas id="myCanvas">
+    </canvas>
+    </div>
+    
+    
+    <div id='d2' style="position:absolute; top:-15px; left:10px; z-index:1"> 
+        <a href="index.php"><h1 style="color:#31a7e6;  font-family:verdana; font-size: 40px;">COLEBRO</h1></a>
+    </div>
+    
+    <div id='d3' style="position:absolute; top:150px; left:22%; z-index:1"> 
+    <p style="color:#ffffff;  font-family:arial; font-size: 70px;"> Welcome to COLEBRO </p>
+    </div>
+    
+    <div id='d4' style="position:absolute; top:300px; left:25%; z-index:1"> 
+        <a href="index.php"><p style="color:#ffffff;  font-family:arial; font-size: 40px; text-decoration: underline"> Your Account Created Now Sign In </p></a>
+    </div>
+    
+    
+    
+    <script>
+        var canvas = document.getElementById("myCanvas");
+        var ctx = canvas.getContext("2d");
+        ctx.canvas.width  = window.innerWidth;
+        ctx.canvas.height = window.innerHeight;
+        ctx.fillStyle = "#ffffff";
+        ctx.fillRect(0,0,3000,70);
+    </script>  
+   
+    
+</body>
+</html>

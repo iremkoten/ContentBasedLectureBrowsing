@@ -1,0 +1,94 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Sign Up Colebro</title>
+    
+    <style>
+        a{
+            text-decoration: none !important;
+        }
+    </style>
+    
+</head>
+<body style="background-color:#ffffff;">
+   
+   <div id='d1' style="position:absolute; top:0px; left:0px; z-index:1"> 
+    <canvas id="myCanvas">
+    </canvas>
+    </div>
+    
+    <div id='d11' style="position:absolute; top:500px; left:0px; z-index:1"> 
+    <canvas id="myCanvas2">
+    </canvas>
+    </div>
+    
+    <div id='d2' style="position:absolute; top:-15px; left:10px; z-index:1"> 
+        <a href="index.php"><h1 style="color:#ffffff;  font-family:verdana; font-size: 40px;">COLEBRO</h1></a>
+    </div>
+    
+    <script>
+        var canvas = document.getElementById("myCanvas");
+        var ctx = canvas.getContext("2d");
+        ctx.canvas.width  = window.innerWidth;
+        ctx.canvas.height = window.innerHeight;
+        ctx.fillStyle = "#31a7e6";
+        ctx.fillRect(0,0,3000,70);
+        
+        var canvas = document.getElementById("myCanvas2");
+        var ctx = canvas.getContext("2d");
+        ctx.canvas.width  = window.innerWidth;
+        ctx.canvas.height = window.innerHeight;
+        ctx.fillStyle = "#31a7e6";
+        ctx.fillRect(0,0,3000,1000);
+    </script>
+    
+    <form action="signUp.php" method="post">
+		
+	<div id='d3' style="position:absolute; top:170px; left:40%; z-index:1"> 
+    <label style="font-family: arial">Somethings Wrong Please Try Again</label>
+    </div>
+    
+    <div id='d3' style="position:absolute; top:200px; left:40%; z-index:1"> 
+    <label style="font-family: arial">Username:</label>
+    <input id="usr" name="usr"  minlength="8" style="position:absolute; left:85px; z-index:1" required>
+    </div>
+    
+    <div id='d4' style="position:absolute; top:230px; left:40%; z-index:1"> 
+    <label style="font-family: arial">Password:</label>
+    <input type="password" id="pwd" name="pwd" minlength="8" style="position:absolute; left:85px; z-index:1" required>
+    </div>
+    
+    <div id='d5' style="position:absolute; top:260px; left:40%; z-index:1"> 
+    <label style="font-family: arial">Password:</label>
+    <input type="password" id="pwd2" name="pwd2" minlength="8" style="position:absolute; left:85px; z-index:1" required>
+    </div>
+    
+    <div id='d6' style="position:absolute; top:290px; left:40%; z-index:1"> 
+    <label style="font-family: arial">Mail:</label>
+    <input type="email" id="mail" name="mail" style="position:absolute; left:85px; z-index:1" required>
+    </div>
+    
+    <div id='d7' style="position:absolute; top:320px; left:40%; z-index:1"> 
+    <label style="font-family: arial">Gender:</label>
+    <div id='d8' style="position:absolute; top:0px; left:85px; z-index:1"> 
+    <select name="option"> <option>Male</option><option>Female</option></select>
+        </div>
+    </div>
+    
+    <div id='d9' style="position:absolute; top:350px; left:40%; z-index:1"> 
+    <label style="font-family: arial">Age:</label>
+    <input  id="age" name="age" style="position:absolute; left:85px; z-index:1" required>
+    </div>
+    
+    <div id='d10' style="position:absolute; top:390px; left:50%; z-index:1"> 
+    <input type="submit" value="Sign Up">
+    </div>
+    
+    </form>
+
+    
+   
+    
+</body>
+</html>
