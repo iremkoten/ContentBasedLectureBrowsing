@@ -9,10 +9,10 @@ if(move_uploaded_file($_FILES['kullanici_dosyasi']['tmp_name'], $targetfolder))
 
  {
 	
-$servername = "localhost:3306";
-$username = "colebroDB";
-$password = "samfyf-xAkfeq-4donto";
-$dbname = "st4362761_";
+$servername = "";
+$username = "";
+$password = "";
+$dbname = "";
 
 // Create connection
 $conn = new mysqli($servername, $username, $password,$dbname);
