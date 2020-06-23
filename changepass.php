@@ -58,9 +58,9 @@
 	
 	<div id='d3' style="position:absolute; top:100px; left:2%; z-index:1"> 
     <label style="font-family: arial" for="usr">Active User: <?php session_start(); echo $_SESSION["activeuser"]; $servername = "localhost:3306";
-$username = "colebroDB";
-$password = "samfyf-xAkfeq-4donto";
-$dbname = "st4362761_";
+$username = "";
+$password = "";
+$dbname = "";
 
 // Create connection
 $conn = new mysqli($servername, $username, $password,$dbname);
